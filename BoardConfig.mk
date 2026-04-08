@@ -7,8 +7,6 @@
 
 DEVICE_PATH := device/kte/V200
 
-BOARD_RAMDISK_USE_LZ4 := true
-
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
