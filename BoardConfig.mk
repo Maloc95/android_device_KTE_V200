@@ -88,5 +88,3 @@ TW_EXCLUDE_NANO := true             # 移除 nano 编辑器 (~0.5MB)
 TW_NO_RECOVERY_SPLASH_SCREEN := true  # 移除启动动画 (~2-3MB)
 TW_EXCLUDE_DEFAULT_USB_INIT := true # 部分 MTK 机型不需要
 TW_EXCLUDE_EDIFY := true # 假设只用 zip 刷机且不用 edify 脚本
-
-PRODUCT_PACKAGES_FILTER := %libart% %libandroid_runtime% %libhwui% %libskia%
