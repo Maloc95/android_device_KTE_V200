@@ -7,6 +7,8 @@
 
 DEVICE_PATH := device/kte/V200
 
+BOARD_RAMDISK_USE_LZ4 := true
+
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
@@ -76,15 +78,19 @@ PLATFORM_VERSION := 16.1.0
 # TWRP Configuration
 TW_THEME := portrait_mdpi
 TW_EXTRA_LANGUAGES := false
-TW_DEFAULT_LANGUAGE := zh_CN 
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 
 # ==========
+TW_EXCLUDE_TZDATA := true
+TW_INCLUDE_FB2PNG := false
+TW_OEM_BUILD := true
 TARGET_RECOVERY_DENSITY := mdpi
 TW_EXCLUDE_TWRPAPP := true          # 移除 TWRP Manager (~2MB)
 TW_EXCLUDE_NANO := true             # 移除 nano 编辑器 (~0.5MB)
 TW_NO_RECOVERY_SPLASH_SCREEN := true  # 移除启动动画 (~2-3MB)
 TW_EXCLUDE_DEFAULT_USB_INIT := true # 部分 MTK 机型不需要
 TW_EXCLUDE_EDIFY := true # 假设只用 zip 刷机且不用 edify 脚本
+
+TW_INCLUDE_CRYPTO := true
