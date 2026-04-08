@@ -74,7 +74,7 @@ VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
-TW_THEME := portrait_hdpi
+TW_THEME := portrait_mdpi
 TW_EXTRA_LANGUAGES := false
 TW_DEFAULT_LANGUAGE := zh_CN 
 TW_SCREEN_BLANK_ON_BOOT := true
@@ -84,9 +84,6 @@ TW_USE_TOOLBOX := true
 # ==========
 TW_EXCLUDE_TWRPAPP := true          # 移除 TWRP Manager (~2MB)
 TW_EXCLUDE_NANO := true             # 移除 nano 编辑器 (~0.5MB)
-
-TARGET_RECOVERY_DENSITY := mdpi     # 使用 mdpi 资源，比 hdpi 小很多
+TW_NO_RECOVERY_SPLASH_SCREEN := true  # 移除启动动画 (~2-3MB)
 TW_EXCLUDE_DEFAULT_USB_INIT := true # 部分 MTK 机型不需要
 TW_EXCLUDE_EDIFY := true # 假设只用 zip 刷机且不用 edify 脚本
-
-
