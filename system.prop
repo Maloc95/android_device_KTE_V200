@@ -1,4 +1,0 @@
-# 禁用加密
-ro.crypto.state=unencrypted
-ro.crypto.type=none
-ro.crypto.encrypt_footer=false
