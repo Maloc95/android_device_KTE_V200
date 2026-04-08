@@ -75,10 +75,18 @@ PLATFORM_VERSION := 16.1.0
 
 # TWRP Configuration
 TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
+TW_EXTRA_LANGUAGES := false
+TW_DEFAULT_LANGUAGE := zh_CN 
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 
 # ==========
+TW_EXCLUDE_TWRPAPP := true          # 移除 TWRP Manager (~2MB)
+TW_EXCLUDE_NANO := true             # 移除 nano 编辑器 (~0.5MB)
+
 TARGET_RECOVERY_DENSITY := mdpi     # 使用 mdpi 资源，比 hdpi 小很多
+TW_EXCLUDE_DEFAULT_USB_INIT := true # 部分 MTK 机型不需要
+TW_EXCLUDE_EDIFY := true # 假设只用 zip 刷机且不用 edify 脚本
+
+
