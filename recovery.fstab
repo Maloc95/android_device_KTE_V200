@@ -4,6 +4,9 @@
 /data             f2fs       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata      flags=display="Data";backup=1;wipeingui;encryptable=footer;length=-16384
 /cache            ext4       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache         flags=display="Cache";wipeingui
 
+# 必须把 metadata 分区也加进来，因为 FDE 的密钥存在这里
+/metadata         emmc       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata      flags=display="Metadata";backup=1
+
 # 联发科特有分区 (建议加入备份列表，防止刷机丢失基带/IMEI)
 /nvram            emmc       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvram         flags=display="NVRAM";backup=1;flashimg=1
 /nvdata           ext4       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/nvdata        flags=display="NVDATA";backup=1;subpartitionof=/nvram
