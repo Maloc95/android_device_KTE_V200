@@ -83,10 +83,10 @@ TW_USE_TOOLBOX := true
 
 # ==========
 TW_EXCLUDE_TWRPAPP := true          # 移除 TWRP Manager (~2MB)
-TW_EXCLUDE_NANO := true             # 移除 nano 编辑器 (~0.5MB)
-TW_EXCLUDE_TZDATA := true
-TW_INCLUDE_FB2PNG := false
 
+# TW_EXCLUDE_TZDATA := true
+# TW_INCLUDE_FB2PNG := false
+# TW_EXCLUDE_NANO := true             移除 nano 编辑器 (~0.5MB)
 # TW_EXCLUDE_DEFAULT_USB_INIT := true
 # TW_EXCLUDE_EDIFY := true
 # TW_OEM_BUILD := true
