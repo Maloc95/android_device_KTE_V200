@@ -95,7 +95,8 @@ TW_INCLUDE_FB2PNG := false
 TW_EXCLUDE_MTP := false
 TW_HAS_MTP := true
 
-BOARD_RAMDISK_USE_LZ4 := true
+# BOARD_RAMDISK_USE_LZ4 := true
+BOARD_RAMDISK_USE_LZMA := true
 
 # 开启内置存储映射
 RECOVERY_SDCARD_ON_DATA := true
