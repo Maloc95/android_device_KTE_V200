@@ -1,0 +1,3 @@
+# 强制 TWRP 默认开启 MTP 和 ADB 调试
+sys.usb.config=mtp,adb
+ro.sys.usb.storage.type=mtp
