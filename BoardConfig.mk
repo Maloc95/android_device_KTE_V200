@@ -90,12 +90,12 @@ TW_INCLUDE_FB2PNG := false
 # TW_EXCLUDE_DEFAULT_USB_INIT := true
 # TW_EXCLUDE_EDIFY := true
 # TW_OEM_BUILD := true
+# TW_EXCLUDE_MTP := false
+# TW_HAS_MTP := true
 
 TW_INCLUDE_NTFS_3G := false
 TW_NO_EXFAT_FUSE := true
 TW_NO_EXFAT := true
-TW_EXCLUDE_MTP := false
-TW_HAS_MTP := true
 TW_EXCLUDE_PYTHON := true
 
 BOARD_RAMDISK_USE_LZ4 := true
