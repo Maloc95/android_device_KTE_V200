@@ -85,10 +85,10 @@ TW_USE_TOOLBOX := true
 TW_EXCLUDE_TWRPAPP := true          # 移除 TWRP Manager (~2MB)
 TW_EXCLUDE_NANO := true             # 移除 nano 编辑器 (~0.5MB)
 TW_NO_RECOVERY_SPLASH_SCREEN := true  # 移除启动动画 (~2-3MB)
-TW_EXCLUDE_DEFAULT_USB_INIT := true # 部分 MTK 机型不需要
 TW_EXCLUDE_TZDATA := true
 TW_INCLUDE_FB2PNG := false
 
+# TW_EXCLUDE_DEFAULT_USB_INIT := true
 # TW_EXCLUDE_EDIFY := true
 # TW_OEM_BUILD := true
 
