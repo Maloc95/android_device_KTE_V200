@@ -86,13 +86,19 @@ TW_EXCLUDE_TWRPAPP := true          # 移除 TWRP Manager (~2MB)
 TW_EXCLUDE_NANO := true             # 移除 nano 编辑器 (~0.5MB)
 TW_NO_RECOVERY_SPLASH_SCREEN := true  # 移除启动动画 (~2-3MB)
 TW_EXCLUDE_DEFAULT_USB_INIT := true # 部分 MTK 机型不需要
-TW_EXCLUDE_EDIFY := true # 假设只用 zip 刷机且不用 edify 脚本
 TW_EXCLUDE_TZDATA := true
 TW_INCLUDE_FB2PNG := false
-TW_OEM_BUILD := true
+
+# TW_EXCLUDE_EDIFY := true
+# TW_OEM_BUILD := true
+
+TW_EXCLUDE_MTP := false
+TW_HAS_MTP := true
+
 BOARD_RAMDISK_USE_LZ4 := true
 TW_INCLUDE_CRYPTO := true
 TW_CRYPTO_USE_SYSTEM_VOLD := true
 # 开启内置存储映射
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
+# ==========
