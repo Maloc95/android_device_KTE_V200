@@ -1,10 +1,10 @@
 # 挂载点          文件系统     块设备路径                                                                标志 (Flags)
 /system           ext4       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/system        flags=display="System";backup=1;wipeingui
 /vendor           ext4       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/vendor        flags=display="Vendor";backup=1;wipeingui
-/data             f2fs       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata      flags=display="Data";backup=1;wipeingui;encryptable=footer;length=-16384
+/data             f2fs       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/userdata      flags=display="Data";backup=1;wipeingui;length=-16384
 /cache            ext4       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/cache         flags=display="Cache";wipeingui
 
-# 必须把 metadata 分区也加进来，因为 FDE 的密钥存在这里
+# 若想解密data，必须把 metadata 分区也加进来，因为 FDE 的密钥存在这里
 /metadata         emmc       /dev/block/platform/mtk-msdc.0/11230000.msdc0/by-name/metadata      flags=display="Metadata";backup=1
 
 # 联发科特有分区 (建议加入备份列表，防止刷机丢失基带/IMEI)
