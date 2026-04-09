@@ -84,7 +84,6 @@ TW_USE_TOOLBOX := true
 # ==========
 TW_EXCLUDE_TWRPAPP := true          # 移除 TWRP Manager (~2MB)
 TW_EXCLUDE_NANO := true             # 移除 nano 编辑器 (~0.5MB)
-TW_NO_RECOVERY_SPLASH_SCREEN := true  # 移除启动动画 (~2-3MB)
 TW_EXCLUDE_TZDATA := true
 TW_INCLUDE_FB2PNG := false
 
@@ -92,11 +91,15 @@ TW_INCLUDE_FB2PNG := false
 # TW_EXCLUDE_EDIFY := true
 # TW_OEM_BUILD := true
 
+TW_INCLUDE_NTFS_3G := false
+TW_NO_EXFAT_FUSE := true
+TW_NO_EXFAT := true
 TW_EXCLUDE_MTP := false
 TW_HAS_MTP := true
+TW_EXCLUDE_PYTHON := true
 
-# BOARD_RAMDISK_USE_LZ4 := true
-BOARD_RAMDISK_USE_LZMA := true
+BOARD_RAMDISK_USE_LZ4 := true
+# BOARD_RAMDISK_USE_LZMA := true
 
 # 开启内置存储映射
 RECOVERY_SDCARD_ON_DATA := true
